@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Recherche d'adresse IP - ipapi</title>
+  <link rel="stylesheet" href="../style.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-o9N1j6kzQ2w3b6sM7f4lVgH8WcQ1X5pLk/6q+qX0p8M=" crossorigin=""/>
+</head>
+<body>
+  <header>
+    <h1>Recherche d'adresse IP</h1>
+    <p>Recherche d'informations sur une adresse ip</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input type="text" id="ipInput" placeholder="Entrez une adresse IP (ex : 1.4.193.15)">
+      <button id="searchBtn">Rechercher</button>
+    </section>
+
+    <section id="status" class="status">En attente…</section>
+
+    <section class="results">
+      <div id="info"></div>
+      <pre id="raw"></pre>
+    </section>
+
+
+
+    <a href="index.html" class="btn">⬅ Retour à l'accueil</a>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="../scripts/recherche_ip.js"></script>
+</body>
+</html>

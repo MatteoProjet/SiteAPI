@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carte IP - ipapi</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Carte IP</h1>
+    <p>Recherchez une adresse IP et visualisez sa localisation sur une carte</p>
+  </header>
+
+  <main>
+    <section class="controls">
+      <input type="text" id="mapIpInput" placeholder="Entrez une adresse IP (ex : 8.8.8.8)">
+      <button id="mapSearchBtn">Afficher sur la carte</button>
+    </section>
+
+    <section id="mapStatus" class="status">En attente…</section>
+
+    <div class="map-container">
+      <div id="mapOnly"></div>
+    </div>
+
+    <a href="index.html" class="btn">⬅ Retour à l'accueil</a>
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="../scripts/map_ip.js"></script>
+</body>
+</html>

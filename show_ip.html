@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Afficher mon IP</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+<body>
+  <header>
+    <h1>Mon adresse IP</h1>
+    <p>Voici votre adresse IP publique et sa localisation approximative</p>
+  </header>
+  <main>
+    <div class="status" id="status">Chargement…</div>
+    <div class="results">
+      <div id="info"></div>
+      <pre id="raw"></pre>
+    </div>
+    <div class="map-container">
+      <div id="map" style="height:400px;"></div>
+    </div>
+
+    <a href="index.html" class="btn">⬅ Retour à l'accueil</a>
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="../scripts/show_ip.js"></script>
+</body>
+</html>
